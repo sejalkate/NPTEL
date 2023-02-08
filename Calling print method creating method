@@ -1,0 +1,17 @@
+public class Question23
+{
+  public static void main(String[]args)
+  {
+    Question23 q=new Question23();
+    q.student();
+  }
+  void print(Question23 object)
+  {
+    System.out.print ("Well Done!");
+  }
+  void student()
+  {
+    print(this);
+  }
+}
+
