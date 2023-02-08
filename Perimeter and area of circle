@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String[]args)
+  {
+    Scanner s=new Scanner(System.in);
+    System.out.print("Enter the radius=");
+    double radius=s.nextDouble ();
+    double perimeter,area;
+    if(radius<=0)
+    {
+        System.out.print(" please enter non zero positive number");
+    }
+    else
+    {
+        System.out.println ("Perimeter of circle="+(2 * Math.PI * radius));
+        System.out.print ("Area of circle="+(Math.PI * radius * radius));
+    }
+      
+  }
+}
