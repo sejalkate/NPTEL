@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Question
+{			
+  System.out.println("Enter two numbers");
+  Scanner sc =new Scanner(System.in);
+  int e1=sc.nextInt();	
+  int e2=sc.nextInt();	
+}
+
+public class Main
+{
+  public static void swap(Question t)
+  {
+    int temp = t.e1;
+      t.e1 = t.e2;
+      t.e2 = temp;
+  }
+  public static void main(String[]args)
+  {
+//Create an object of class Question
+    Question t = new Question();
+    //Call the method swap()
+    swap (t);
+
+    System.out.println("After swapping=" + t.e1 + " " + t.e2);
+  }
+
+}
