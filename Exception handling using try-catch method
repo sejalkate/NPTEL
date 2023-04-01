@@ -1,0 +1,26 @@
+import java.util.Scanner;
+  
+  public class Main 
+  {
+      public static void main(String[] args) 
+      { 
+          int a, b;
+          Scanner input = new Scanner(System.in);
+          int result;
+          System.out.println("Enter two numbers");
+          a = input.nextInt();
+          b = input.nextInt();
+  
+      // try block to divide two numbers and display the result
+         try 
+         {
+             result = a/b;
+             System.out.println("Result= "+result);
+         }
+          // catch block to catch the ArithmeticException
+         catch (ArithmeticException e) 
+         {
+             System.out.println("Exception caught: Division by zero.");
+         }
+      }
+  }
