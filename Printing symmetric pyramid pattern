@@ -1,0 +1,46 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+	    int l=sc.nextInt();
+        int ul=0,ll=0;
+        if(l%2!=0)
+        {
+            ul=(l/2)+1;
+            ll=l-ul;
+            for(int p=1;p<=ul;p++)
+            {
+                for(int s=1;s<=(ul-p);s++)
+                {
+                    System.out.print(" ");
+                }
+                for(int j=1;j<=p;j++)
+                {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+        
+            int c=ll;
+            for(int p=1;p<=ll;p++)
+            {
+                for(int s=c;s<ll;s++)
+                {
+                    System.out.print(" ");
+                }
+                for(int q=1;q-1<=ll-p;q++)
+                {
+                    System.out.print(" *");
+                }
+                c--;
+                System.out.println();
+            }
+        }
+        else
+        {
+            System.out.print("Invalid line number");
+        }
+    }
+}
