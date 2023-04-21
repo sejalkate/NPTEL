@@ -1,0 +1,17 @@
+import java.net.*;  
+public class Main {  
+   public static void main(String[] args){
+try
+     {  
+       URL url=new URL("http://www.Nptel.com/java-tutorial");  
+       System.out.println("Protocol: "+url.getProtocol());  
+       System.out.print("Host Name: "+url.getHost());  
+   
+      }
+       catch(Exception e)
+       {
+         System.out.print(e);
+       }  
+   }  
+}
+ 
