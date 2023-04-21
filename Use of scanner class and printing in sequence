@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main 
+{
+  public static void main(String[] args)
+  {
+      Scanner s1 = new Scanner(System.in);
+      String firstname = s1.next();
+      String lastname = s1.next();
+      int roll_no = s1.nextInt();
+      double mark1 = s1.nextDouble();
+      double mark2 = s1.nextDouble();
+      double avg=(mark1+mark2)/2;
+      System.out.print(firstname + lastname +" "+ roll_no +" "+avg );
+  }
+}
